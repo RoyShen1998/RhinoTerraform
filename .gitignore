@@ -1,0 +1,30 @@
+# Personal settings and anything that can hold account details
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+.env
+.env.*
+*.pem
+*.key
+
+# Terraform working files. State contains account ids and resource details.
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Lambda zip built during plan/apply
+.build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
